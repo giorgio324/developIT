@@ -1,0 +1,317 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    --clr-primary-dark: #fd8236;
+    --clr-primary-main: #FF9551;
+    --clr-primary-light: #ffa166;
+    --clr-turn: #FF4A4A;
+    --clr-grey-dark: hsl(209, 61%, 16%);
+    --clr-grey: hsl(210, 22%, 49%);
+    --clr-grey-light: hsl(212, 33%, 89%);
+    --clr-grey-lighter: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-light);
+    color: var(--clr-white);
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin-top: 53px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:not(.nav-logo) {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+
+/*  global classes */
+.section_title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    background: var(--clr-primary-main);
+    color: var(--clr-white);
+    padding: 0.7rem 1rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    color: black;
+    background: var(--clr-primary-dark);
+}
+
+/* section */
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 2;
+    box-shadow: var(--light-shadow);
+}
+
+/* start */
+
+.nav {
+    background: var(--clr-primary-main);
+}
+
+.navbar {
+    min-height: 52px;
+    max-height: 70px;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    min-width: 50px;
+    max-width: 60px;
+    margin-left: 5rem;
+}
+
+.links {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.link {
+    margin-right: 2.5rem;
+}
+.link a{
+    color: black;
+}
+.link:hover a{
+    text-decoration: underline;
+    color: var(--clr-turn);
+    transition: var(--transition);
+}
+.main{
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(photos/pexels-christina-morillo-1181263.jpg) center/cover fixed no-repeat ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main h1,h2,h3,h4,h5{
+    text-align: center;
+    padding: 1rem 0;
+}
+.btn-learn:hover{
+    transform: scale(1.075);
+}
+
+.feature h3{
+    margin: 3rem 0;
+}
+
+.card{
+    max-width: 340px;
+    border-radius:18px ;
+    transition: var(--transition);
+    margin: 1rem;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: var(--dark-shadow);
+}
+.feature-img{
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.card-info{
+    background: white;
+    text-align: center;
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.card-info h4,p{
+    margin: 0 2rem;
+}
+.card-info p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.feature-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-details{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.details-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    background: white;
+        color: black;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+}
+.person{
+    border-radius: 50%;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    margin-left: 0.5rem;
+}
+.person-name{
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+    font-weight: bold;
+}
+.view-all-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
