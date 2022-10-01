@@ -7,23 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0d7cbd3817.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="nav navbar-fixed">
-        <div class="section-center navbar">
-            <div class="nav-flex">
-                <div class="logo-box">
-                    <img class="logo" src="photos/Promo-Facebook-Facebook profile picture.jpeg"></img>
-                </div>
-                <ul class="links">
-                    <li class="link"><a href="#">merch store</a></li>
-                    <li class="link"><a href="#">log in</a></li>
-                    <li class="link"><a href="#">sign up</a></li>
-                </ul>
+    <nav class="navbar-fixed">
+        <div class="nav-center">
+            <div class="nav-header">
+                <h3 class="logo">Develop<span>IT</span></h3>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
+            <!-- links -->
+            <ul class="links">
+                <li class="link"><a href="#">merch store</a></li>
+                <li class="link"><a href="#">log in</a></li>
+                <li class="link"><a href="#">sign up</a></li>
+            </ul>
+
         </div>
     </nav>
+    <!-- as -->
     <section class="main">
         <div class="text">
             <h2>Coding and design courses</h2>
@@ -45,12 +50,14 @@
                             <img class="feature-img" src="photos/html.jpg" alt="">
                         </div>
                         <div class="card-info">
-                            <h4>html couse</h4>
+                            <h4>html course</h4>
                             <p>learn to understand and create websites in html</p>
                         </div>
                         <div class="details-flex ">
                             <div class="card-details">
-                                <img class="person" src="photos/lala-azizli-8IJ5xNTv1QM-unsplash.jpg" alt="">
+                                <div class="person-img">
+
+                                </div>
                                 <p class="person-name">lala</p>
                             </div>
                             <div class="price-container">
@@ -65,16 +72,18 @@
                             <img class="feature-img" src="photos/css.jpg" alt="">
                         </div>
                         <div class="card-info">
-                            <h4>Css couse</h4>
+                            <h4>Css course</h4>
                             <p>learn to understand and create websites in html</p>
                         </div>
                         <div class="details-flex ">
                             <div class="card-details">
-                                <img class="person" src="photos/lala-azizli-8IJ5xNTv1QM-unsplash.jpg" alt="">
+                                <div class="person-img">
+
+                                </div>
                                 <p class="person-name">lala</p>
                             </div>
                             <div class="price-container">
-                                <h5 class="price">$4.99</h5>
+                                <h5 class="price">$6.99</h5>
                             </div>
                         </div>
                     </div>
@@ -85,31 +94,60 @@
                             <img class="feature-img" src="photos/js.jpg" alt="">
                         </div>
                         <div class="card-info">
-                            <h4>Javascript couse</h4>
+                            <h4>Javascript course</h4>
                             <p>learn to understand and create websites in html</p>
                         </div>
                         <div class="details-flex ">
                             <div class="card-details">
-                                <img class="person" src="photos/lala-azizli-8IJ5xNTv1QM-unsplash.jpg" alt="">
+                                <div class="person-img">
+
+                                </div>
                                 <p class="person-name">lala</p>
                             </div>
                             <div class="price-container">
-                                <h5 class="price">$4.99</h5>
+                                <h5 class="price">$11.99</h5>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="view-all-container">
-                <a href="#"><button class="btn btn-all">view all</button></a>
+                <a href="#"><button class="btn btn-learn">view all</button></a>
             </div>
         </div>
     </section>
     <section class="reviews section">
         <div class="reviews_title_section">
             <h3>reviews</h3>
+            <p>check out the reviews our customers have left</p>
+        </div>
+        <div class="reviews-content-container">
+            <div class="reviews-container section-center">
+                <div class="reviews-img-container">
+
+                </div>
+                <div class="review-title-container">
+                    <h4 id="author">lala brown</h4>
+                    <p id="course">html course</p>
+                </div>
+                <div class="review-info-container">
+                    <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero dolorum adipisci
+                        sunt labore! Maiores autem ipsam corporis unde obcaecati vero perferendis fugit sunt impedit.
+                    </p>
+                </div>
+                <div class="review-btns">
+                    <button class="btn go-back-btn fa-beat" style="--fa-animation-duration: 2.5s;"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button class="btn random-btn">random</button>
+                    <button class="btn go-forward-btn fa-beat" style="--fa-animation-duration: 2.5s;"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </section>
+
+<!--    TO DO: ADD js logic to reviews Add questions page add modal for sign up and log in     -->
+
     <script src="script.js"></script>
 </body>
 
