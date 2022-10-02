@@ -1,3 +1,4 @@
+'use strict'
 // add links class on click of a hamburger button (nav-toggle)
 const navBtn = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links')
@@ -5,6 +6,7 @@ navBtn.addEventListener('click', function () {
     links.classList.toggle("show-links")
 })
 //end of navbtn
+
 //data for rewievs
 const reviews = [
     {
@@ -46,7 +48,7 @@ const reviews = [
 ];
 //end of data
 
-// make reviews scroll
+// make reviews scroll left and right
 
 const backBtn = document.querySelector('.go-back-btn');
 const forwardBtn = document.querySelector('.go-forward-btn');
@@ -58,14 +60,14 @@ const courseName = document.getElementById('course');
 const info = document.getElementById('info');
 // starting index of items
 let startItem = 0;
-// loads instantly with the page
+// this event loads instantly with the page once
 window.addEventListener('DOMContentLoaded', function () {
     reviewer(startItem);
 })
 // make functions that update startItem +1 and -1
 forwardBtn.addEventListener('click', function () {
     startItem++;
-    if (startItem > 3) {
+    if (startItem > reviews.length - 1) {
         startItem = 0;
     }
     reviewer(startItem);
@@ -93,3 +95,15 @@ function reviewer(person) {
     courseName.textContent = item.course;
     info.textContent = item.text;
 }
+
+// questions open and close
+const questions = document.querySelectorAll('.question');
+
+questions.forEach(function(question){
+    const btn = question.querySelector('.question-btn');
+    console.log(btn)
+    btn.addEventListener('click',function(){
+        question.classList.toggle('show-text')
+    })
+    
+})

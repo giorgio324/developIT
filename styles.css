@@ -45,13 +45,18 @@ Global Styles
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-secondary);
     background: var(--clr-grey-lighter);
     color: var(--clr-white);
     line-height: 1.5;
     font-size: 0.875rem;
-    margin-top: 53px;
+    margin-top: 84px;
+    margin-bottom: 0;
 }
 
 ul {
@@ -214,6 +219,10 @@ nav {
     height: 40px;
 }
 
+.logo-link {
+    color: black;
+}
+
 .links a {
     color: black;
     font-size: 1rem;
@@ -265,7 +274,7 @@ h5 {
 }
 
 .feature h3 {
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .card {
@@ -300,8 +309,8 @@ p {
 
 .card-info p {
     font-size: 14px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .feature-cards-container {
@@ -356,7 +365,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3.5rem 0rem;
+    padding: 3.5rem 0rem;
 }
 
 .reviews {
@@ -394,7 +403,7 @@ p {
 }
 
 .reviews_title_section {
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .reviews_title_section p {
@@ -419,7 +428,8 @@ p {
     max-width: 35rem;
     margin: 2rem 0;
 }
-.logo span{
+
+.logo span {
     color: #f00b0b;
 }
 
@@ -455,4 +465,79 @@ p {
         padding: 0;
         background: transparent;
     }
+    
+}
+
+/* questions */
+.questions-title {
+    padding: 3rem 0;
+}
+
+.questions {
+    background: var(--clr-grey-lighter);
+    color: black;
+}
+
+.question-btn-more {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.question-btn-less {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+.questions-content-container {
+    background: white;
+    border-radius: 18px;
+    margin-bottom: 2.5rem;
+}
+
+.question-content {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-content h4{
+    padding: auto 0;
+    margin-top: 0.5rem;
+}
+
+.underline {
+    min-height: 0.2rem;
+    background: var(--clr-grey-light);
+    border-radius: 15px;
+    margin: 1rem 0;
+}
+
+.question-text {
+    padding: 0 2rem;
+    display: none;
+}
+
+.question-info {
+    padding: 1.5rem 0;
+}
+.show-text .question-text{
+    display: inline-block;
+}
+
+
+.show-text .question-btn-less {
+    display: inline;
+}
+
+.show-text .question-btn-more {
+    display: none;
 }
