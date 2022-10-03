@@ -246,6 +246,7 @@
             </div>
         </section>
     </footer>
+    <!-- modals -->
     <div class="modal">
         <div class="modal-content">
             <button class="close-btn"><i class="fa-solid fa-x"></i></button>
@@ -276,7 +277,41 @@
 
             </form>
         </div>
+        
     </div>
+    <div class="modal-register">
+        <div class="modal-content">
+            <button class="register-close-btn"><i class="fa-solid fa-x"></i></button>
+            <div class="modal-title">
+                <h3>Register</h3>
+            </div>
+            <form action="" method="post">
+                <div class="register-logo">
+                    <h3 class="logo">Develop<span>IT</span></h3>
+                </div>
+                <div class="register-content">
+                    <div class="register-username">
+                        <label for="reguname"><b>Username</b></label>
+                        <input class="register-username" type="text" placeholder="Enter Username" name="reguname" required>
+                    </div>
+                    <div class="register-password">
+                        <label for="regpsw"><b>Password</b></label>
+                        <input class="register-password" type="password" placeholder="Enter Password" name="regpsw" required>
+                    </div>
+                    <div class="repeat-password">
+                        <label for="repeatpsw"><b>Repeat Password</b></label>
+                        <input class="repeat-password" type="password" placeholder="Repeat Password" name="repeatpsw" required>
+                    </div>
+                    <div class="register-container">
+                        <button class="btn register-btn" type="submit">Register</button>
+                        <label class="register-remember">
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                </div>
+    
+            </form>
+        </div>
     <!--    TO DO: fix minus button add modal for sign up and log in     -->
     <script src="script.js"></script>
 </body>

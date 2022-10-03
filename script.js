@@ -107,9 +107,8 @@ questions.forEach(function(question){
     })
     
 })
-// modal
+// modal login
 const modalLoginBtn = document.querySelector('#login');
-const modalReginsterBtn = document.querySelector('#sign-up');
 const nav = document.querySelector('.navbar-fixed');
 const body = document.body;
 const modal = document.querySelector('.modal');
@@ -133,4 +132,26 @@ loginBtn.addEventListener('click', function (e) {
     alert('yeah this is not connectet to any database sooooo you can not login')
 })
 
+// modal register
 
+const modalReginsterBtn = document.querySelector('#sign-up');
+const modalRegisterCloseBtn = document.querySelector('.register-close-btn');
+const modalRegister = document.querySelector('.modal-register');
+const registerBtn = document.querySelector('.register-btn');
+modalReginsterBtn.addEventListener('click', function () {
+    nav.style.display = 'none'
+    body.style.marginTop = 0
+    modalRegister.style.display = 'block'
+})
+modalRegisterCloseBtn.addEventListener('click',function(){
+    nav.style.display = 'block'
+    body.style.marginTop = "84px"
+    modalRegister.style.display = 'none'
+})
+registerBtn.addEventListener('click', function (e) {
+    nav.style.display = 'block'
+    body.style.marginTop = "84px"
+    modalRegister.style.display = 'none'
+    e.preventDefault();
+    alert('yeah this is not connectet to any database sooooo you can not register :p')
+})
