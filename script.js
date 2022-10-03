@@ -107,3 +107,30 @@ questions.forEach(function(question){
     })
     
 })
+// modal
+const modalLoginBtn = document.querySelector('#login');
+const modalReginsterBtn = document.querySelector('#sign-up');
+const nav = document.querySelector('.navbar-fixed');
+const body = document.body;
+const modal = document.querySelector('.modal');
+const modalCloseBtn = document.querySelector('.close-btn');
+const loginBtn = document.querySelector('.login-btn');
+modalLoginBtn.addEventListener('click',function(){
+    nav.style.display = 'none'
+    body.style.marginTop = 0 
+    modal.style.display = 'block'
+})
+modalCloseBtn.addEventListener('click',function(){
+    nav.style.display = 'block'
+    body.style.marginTop = "84px"
+    modal.style.display = 'none'
+})
+loginBtn.addEventListener('click', function (e) {
+    nav.style.display = 'block'
+    body.style.marginTop = "84px"
+    modal.style.display = 'none'
+    e.preventDefault();
+    alert('yeah this is not connectet to any database sooooo you can not login')
+})
+
+

@@ -24,8 +24,8 @@
             <!-- links -->
             <ul class="links">
                 <li class="link"><a href="#home">home</a></li>
-                <li class="link"><a href="#">log in</a></li>
-                <li class="link"><a href="#">sign up</a></li>
+                <li id="login" class="link"><a href="#">log in</a></li>
+                <li id="sign-up" class="link"><a href="#">sign up</a></li>
             </ul>
 
         </div>
@@ -166,10 +166,13 @@
                 </div>
                 <div class="question-text">
                     <div class="underline"></div>
-                    <div class="question-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quidem nostrum nisi dolorum temporibus et nihil, quasi laborum officia hic? Omnis cumque minima praesentium accusantium numquam iusto facere quod quam, eaque expedita fugit, et ipsa maxime natus sequi qui cupiditate tempore, sed ipsam ut quaerat?</div>
+                    <div class="question-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quidem
+                        nostrum nisi dolorum temporibus et nihil, quasi laborum officia hic? Omnis cumque minima
+                        praesentium accusantium numquam iusto facere quod quam, eaque expedita fugit, et ipsa maxime
+                        natus sequi qui cupiditate tempore, sed ipsam ut quaerat?</div>
                 </div>
             </div>
-            
+
         </div>
         <div class="questions-content-container section-center">
             <div class="question">
@@ -186,10 +189,15 @@
                 </div>
                 <div class="question-text">
                     <div class="underline"></div>
-                    <div class="question-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis totam illum alias fugiat provident ad in, accusantium nisi distinctio quas adipisci suscipit vero quam quaerat cum vitae ratione a dignissimos pariatur quos id? Doloremque nemo quo esse aut quos reprehenderit corporis! Quidem officiis explicabo neque maxime, nisi et animi eaque sequi natus aut accusamus a magnam labore enim tenetur inventore officia, assumenda blanditiis eum!</div>
+                    <div class="question-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis
+                        totam illum alias fugiat provident ad in, accusantium nisi distinctio quas adipisci suscipit
+                        vero quam quaerat cum vitae ratione a dignissimos pariatur quos id? Doloremque nemo quo esse aut
+                        quos reprehenderit corporis! Quidem officiis explicabo neque maxime, nisi et animi eaque sequi
+                        natus aut accusamus a magnam labore enim tenetur inventore officia, assumenda blanditiis eum!
+                    </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="questions-content-container section-center">
             <div class="question">
@@ -206,10 +214,14 @@
                 </div>
                 <div class="question-text">
                     <div class="underline"></div>
-                    <div class="question-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio labore molestiae cum possimus magni ad. Atque optio vitae reiciendis quos, animi delectus. Repudiandae, culpa exercitationem. Fuga nemo expedita consectetur atque quod, tempora quidem, debitis similique obcaecati animi distinctio voluptas veritatis enim rem necessitatibus commodi sapiente eaque repellendus sequi vel quae facere.</div>
+                    <div class="question-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio
+                        labore molestiae cum possimus magni ad. Atque optio vitae reiciendis quos, animi delectus.
+                        Repudiandae, culpa exercitationem. Fuga nemo expedita consectetur atque quod, tempora quidem,
+                        debitis similique obcaecati animi distinctio voluptas veritatis enim rem necessitatibus commodi
+                        sapiente eaque repellendus sequi vel quae facere.</div>
                 </div>
             </div>
-            
+
         </div>
 
     </section>
@@ -234,6 +246,37 @@
             </div>
         </section>
     </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-btn"><i class="fa-solid fa-x"></i></button>
+            <div class="modal-title">
+                <h3>Login</h3>
+            </div>
+            <form action="" method="post">
+                <div class="login-logo">
+                    <h3 class="logo">Develop<span>IT</span></h3>
+                </div>
+                <div class="login-content">
+                    <div class="username">
+                        <label for="uname"><b>Username</b></label>
+                        <input class="login-username" type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div class="password">
+                        <label for="psw"><b>Password</b></label>
+                        <input class="login-password" type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+
+                    <div class="login-container">
+                        <button class="btn login-btn" type="submit">Login</button>
+                        <label class="login-remember">
+                            <input  type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
     <!--    TO DO: fix minus button add modal for sign up and log in     -->
     <script src="script.js"></script>
 </body>
