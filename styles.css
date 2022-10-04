@@ -46,10 +46,14 @@ Global Styles
 }
 
 html {
+    width:100%;
+    overflow-x:hidden;
     scroll-behavior: smooth;
 }
 
 body {
+    width:100%;
+    overflow-x:hidden;
     font-family: var(--ff-secondary);
     background: var(--clr-grey-lighter);
     color: var(--clr-white);
